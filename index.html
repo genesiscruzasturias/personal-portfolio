@@ -3,55 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <title>Personal Portfolio</title>
 </head>
 <body>
 <div class="page-wrapper">
 <!--        Navbar-->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="#">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="#">Skills & Tools</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                            <a class="nav-link" href="#">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
 <!--    Middle Content-->
-    <div class="row">
-        <div class="col">
-            <p>Good morning/afternoon!<br> My name is Genesis! I'm a Full-Stack Software Developer<br> and soccer fan.</p>
+    <div class="row middle-content-row">
+        <div class="col middle-content">
+            <p>Good morning/afternoon!<br> My name is Genesis! I'm a Full-Stack Software Developer<br> <span></span></p>
         </div>
         <div class="col">
 
         </div>
     </div>
-<!--    THird Row-->
+<!--    Third Row-->
     <div class="row">
         <div class="col">
+        <h1>About</h1>
+            <p>Who is Genesis?</p>
+        </div>
+        <div class="about-me-description">
+<!--            A curiosity-driven Full-Stack Developer with musical background.
+I'm passionate about bringing both the technical and visual aspects of digital products to life. User experience, beautiful pixels and writing clean accessible, human code matters to me. I sweat the details. And as a follower of John Maeda’s Laws Of Simplicity, I agree that less is more.
 
+I have over 10 years of military experience and a Certificate of Full-Stack Web Development.
+
+I'm happiest when I'm creating, learning, exploring and thinking about how to make things better. Currently solving deceptively simple problems at UsePastel.Com. I'm not available for any freelance work, but feel free to reach out and say hello! I promise I don't bite 😉-->
         </div>
         <div class="col">
-
+        <h1>Skills and Tools</h1>
+            <h2>My Skills & Things I Can Do</h2>
+            <ul>
+                <li>Java</li>
+                <li>Spring Boot</li>
+                <li>Hibernate</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>jQuery</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+                <li>Git</li>
+                <li>Thymeleaf</li>
+                <li>Object Oriented Programming</li>
+                <li>MySQL</li>
+                <li>Apache Tomcat</li>
+                <li>Maven</li>
+                <li>J2EE</li>
+                <li>REST APIs</li>
+                <li>Exposure to: </li>
+                <li>Spring Framework</li>
+                <li>JUnit Testing</li>
+                <li>Global Combat Support System Marine Corps(GCSS-MC, Oracle)</li>
+            </ul>
+            <h2>Currently Working On:</h2>
+            <p>I am currently working on developing my skills as a Full-Stack Web Developer.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h1>Work</h1>
+            <p>A Selection Of Stuff I Built</p>
+<!--            Add Projects Here-->
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h1>Contact</h1>
+            <p>Get In Touch</p>
+            <form action="">
+               <input type="text" placeholder="Name">
+                <br>
+                <input type="text" placeholder="Email">
+                <br>
+                <textarea id="message" placeholder="Message" rows="4" cols="50"></textarea>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="col">
+            <h1>Feeling Social?</h1>
+            <h2>Follow me on these online spaces too!</h2>
         </div>
     </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

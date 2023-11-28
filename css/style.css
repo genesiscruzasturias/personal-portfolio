@@ -4,3 +4,52 @@
 #EFD6AC -- wheat
 #38A3A5 -- verdigris
 #84596B -- rose taupe*/
+
+body{
+    background-color: #38A3A5;
+    color: white;
+}
+nav{
+    display: flex;
+    background-color: #EFD6AC;
+    /*align-content: flex-end;*/
+}
+.container-fluid{
+    justify-content: space-between;
+}
+.navbar-nav{
+   display: flex;
+    position: relative;
+    left: 800px;
+}
+.middle-content-row{
+    margin-top: 75px;
+    margin-left: 100px;
+}
+.middle-content{
+    font-size: 50px;
+}
+ul{
+    list-style-type: none;
+}
+
+span::before {
+    content: "and soccer fan.";
+    animation: animate infinite 3s;
+    padding-left: 10px;
+}
+
+@keyframes animate {
+    0% {
+        content: "and soccer fan.;
+    }
+    25% {
+        content: "and optimist.";
+    }
+    50% {
+        content: "and bookworm.";
+    }
+    75% {
+        content: "and nature-lover.";
+    }
+}
