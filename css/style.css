@@ -4,14 +4,39 @@
 #EFD6AC -- wheat
 #38A3A5 -- verdigris
 #84596B -- rose taupe*/
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@400;700&display=swap');
 
-body{
-    background-color: #38A3A5;
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.video-content {
+    position: relative;
+    z-index: 1;
+}
+body, nav{
+    background-color: #8AA29E;
     color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    font-family: "Spectral";
 }
 nav{
     display: flex;
-    background-color: #EFD6AC;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    font-size: 30px;
+    opacity: 0.7;
     /*align-content: flex-end;*/
 }
 .container-fluid{
@@ -20,20 +45,38 @@ nav{
 .navbar-nav{
    display: flex;
     position: relative;
-    left: 800px;
+    left: 780px;
 }
-.middle-content-row{
+.middle-content-row, .third-row{
     margin-top: 75px;
     margin-left: 100px;
+    margin-right: 100px;
+
+
+}
+.skills-text{
+    display: flex;
+    justify-content: left;
+}
+.fifth-row{
+    margin-left: 100px;
+    margin-right: 100px;
 }
 .middle-content{
     font-size: 50px;
 }
-ul{
+.container-ul, .contact-form{
     list-style-type: none;
+    display: flex;
+    /*justify-content: space-evenly;*/
+    /*width: 50%;*/
+    opacity: 0.7;
+    background-color: mediumseagreen;
+    padding: 10px;
+    flex-wrap: wrap;
 }
 
-span::before {
+.js-text::before {
     content: "and soccer fan.";
     animation: animate infinite 3s;
     padding-left: 10px;
@@ -44,12 +87,30 @@ span::before {
         content: "and soccer fan.;
     }
     25% {
-        content: "and optimist.";
+        content: "and music-fiend.";
     }
     50% {
-        content: "and bookworm.";
+        content: "and gamer.";
     }
     75% {
         content: "and nature-lover.";
     }
+
+}
+.box{
+    flex: 0 0 calc(20% - 20px);
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
+.skills-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*border-bottom: 1px solid black;*/
+    font-size: 30px;
+}
+.skills-icon{
+    width: 25%;
+    height: 50px;
 }
