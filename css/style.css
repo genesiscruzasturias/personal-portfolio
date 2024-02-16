@@ -70,7 +70,7 @@ nav{
 
 .skills-text{
     display: flex;
-    justify-content: left;
+    justify-content: center;
 }
 .fifth-row{
     margin-left: 100px;
