@@ -26,10 +26,13 @@ body, html {
     z-index: 1;
 }
 body, nav{
-    background-color: #8AA29E;
+    /*background-color: #8AA29E;*/
     color: white;
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
     font-family: "Spectral";
+}
+.navbar{
+    width: 100%;
 }
 nav{
     display: flex;
@@ -60,14 +63,33 @@ nav{
     position: relative;
     left: 780px;
 }
-.middle-content-row, .third-row, .fourth-row{
+.middle-content-row{
     margin-top: 75px;
+}
+.middle-content-row, .third-row, .fourth-row{
+    /*margin-top: 75px;*/
     margin-left: 100px;
     margin-right: 100px;
     background-color: darkcyan;
     opacity: 0.7;
+    border-radius: 30px;
 }
-
+.fourth-row-replica{
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: darkorange;
+    opacity: 0.7;
+    border-radius: 30px;
+}
+.semi-last-col{
+    background-color: moccasin;
+    opacity: 0.7;
+    border-radius: 30px;
+}
+.last-col{
+    /*background-color: lightblue;*/
+    opacity: 0.7;
+}
 .skills-text{
     display: flex;
     justify-content: center;
@@ -99,6 +121,7 @@ nav{
 @keyframes animate {
     0% {
         content: "and soccer fan.;
+
     }
     25% {
         content: "and music-fiend.";
@@ -128,3 +151,46 @@ nav{
     width: 25%;
     height: 50px;
 }
+button{
+    background-color: #04151F; /* rich black */
+    color: #EFD6AC; /* wheat */
+    border: 1px solid #EFD6AC; /* wheat */
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #183A37; /* dark slate gray */
+    color: #38A3A5; /* verdigris */
+    border-color: #38A3A5; /* verdigris */
+}
+a{
+    text-decoration: none;
+    color: palegreen;
+}
+.contact-form{
+    display: flex;
+}
+.last-row{
+    justify-content: center;
+}
+footer{
+    margin-top: 20px;
+}
+
+/*!* Add styles for screens from 577px to 768px *!*/
+/*@media (min-width: 577px) and (max-width: 768px) {*/
+/*    .navbar {*/
+/*        width: 100%;*/
+/*        position: fixed; !* Example: You can adjust positioning if needed *!*/
+/*        top: 500px; !* Example: You can adjust positioning if needed *!*/
+/*    }*/
+/*}*/
+
+/*!* Add styles for screens up to 576px *!*/
+/*@media (max-width: 576px) {*/
+
+/*}*/
