@@ -33,11 +33,24 @@ body, nav{
 }
 nav{
     display: flex;
-    color: white;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
     font-size: 30px;
     opacity: 0.7;
     /*align-content: flex-end;*/
+}
+.navbar-nav .nav-link {
+    color: white; /* Default color */
+    transition: color 0.3s; /* Add transition effect for smooth color change */
+}
+
+.navbar-nav .nav-link:hover {
+    color: yellow; /* Change color on hover */
+}
+.h1-title{
+    color: yellow;
+    font-size: 24px;
+}
+.name{
+    color: orange;
 }
 .container-fluid{
     justify-content: space-between;
@@ -47,13 +60,14 @@ nav{
     position: relative;
     left: 780px;
 }
-.middle-content-row, .third-row{
+.middle-content-row, .third-row, .fourth-row{
     margin-top: 75px;
     margin-left: 100px;
     margin-right: 100px;
-
-
+    background-color: darkcyan;
+    opacity: 0.7;
 }
+
 .skills-text{
     display: flex;
     justify-content: left;
@@ -70,8 +84,8 @@ nav{
     display: flex;
     /*justify-content: space-evenly;*/
     /*width: 50%;*/
-    opacity: 0.7;
-    background-color: mediumseagreen;
+    /*opacity: 0.7;*/
+    /*background-color: mediumseagreen;*/
     padding: 10px;
     flex-wrap: wrap;
 }
