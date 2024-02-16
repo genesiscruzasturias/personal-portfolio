@@ -70,19 +70,19 @@ nav{
     /*margin-top: 75px;*/
     margin-left: 100px;
     margin-right: 100px;
-    background-color: darkcyan;
+    background-color: slategrey;
     opacity: 0.7;
     border-radius: 30px;
 }
 .fourth-row-replica{
     margin-left: 100px;
     margin-right: 100px;
-    background-color: darkorange;
+    background-color: slategrey;
     opacity: 0.7;
     border-radius: 30px;
 }
 .semi-last-col{
-    background-color: moccasin;
+    background-color: slategrey;
     opacity: 0.7;
     border-radius: 30px;
 }
@@ -179,6 +179,9 @@ a{
 }
 footer{
     margin-top: 20px;
+}
+li{
+    list-style-type: none;
 }
 
 /*!* Add styles for screens from 577px to 768px *!*/
